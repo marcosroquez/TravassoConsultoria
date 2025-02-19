@@ -137,6 +137,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px; /* Adiciona um espaçamento entre os elementos */
+  margin-top: 50px; /* Ajusta a margem para melhor posicionamento */
 }
 
 .header {
@@ -159,7 +161,6 @@ footer {
   width: 50%;
   display: flex;
   justify-content: center;
-  margin-top: 500px;
 }
 
 .image img {
@@ -175,7 +176,6 @@ footer {
   box-shadow: 0px 0px 25px rgba(246, 223, 153, 0.8);
   transform: scale(1.05);
 }
-
 .diferenciais {
   width: 85%;
   margin-top: 40px;
@@ -264,4 +264,50 @@ footer {
       padding: 10px 15px;
       font-size: 0.8rem;
   }
+
+  .planos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .plano {
+    background: #1e1e1e; /* Fundo escuro */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .plano:hover {
+    transform: scale(1.05);
+  }
+  
+  .plano h3 {
+    color: #ffcc00; /* Título destacado */
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .plano ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .plano li {
+    text-align: left;
+    font-size: 1rem;
+    padding: 5px 0;
+    color: #ffffff;
+  }
+  
+  .plano li::before {
+    content: "✔ ";
+    color: #ffcc00;
+    font-weight: bold;
+  }  
 }
